@@ -1,9 +1,103 @@
-.blog-title {
-  color:#93b1c6;
+body {
+  margin: 0;
 }
 
-.rounded-rectangle {
-  border: solid #c7d0d5;
-  border-radius: 25px;
-  padding: 25px;
+header {
+  background-color: #8ea6ae;
+  padding: 2em;
+  text-align: center;
 }
+
+main {
+  text-align: center;
+}
+
+footer {
+  background-color: #8ea6ae;
+  padding: 1em;
+  text-align: right;
+}
+
+ul {
+  padding: 0;
+  margin-left: -100px;
+}
+
+#nav li a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: #effbff;
+  padding: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  color: #cad3d7;
+  outline: solid 2px #cad3d7;
+  text-decoration: none;
+  padding: 1em;
+}
+
+#logo {
+  float: left;
+  display: inline-block;
+}
+
+.logoimg {
+  max-width: 100px;
+  max-height: 48px;
+
+}
+
+#mainnav {
+  display: inline-block;
+}
+
+#nav li {
+  display: inline;
+}
+
+#post {
+  text-align: left;
+  padding: 3em;
+  border: solid 2px #8ea6ae;
+  border-radius: 1em;
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: 70%;
+  min-height: 500px;
+}
+
+#post h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+#post h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+#post h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700
+}
+
+#post p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400
+}
+
+#footernav li {
+  display: inline;
+  color: #effbff;
+  padding: 1em;
+}
+
+
+
+
+
