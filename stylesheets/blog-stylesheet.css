@@ -1,3 +1,9 @@
 .blog-title {
   color:#93b1c6;
 }
+
+.rounded-rectangle {
+  border: solid #c7d0d5;
+  border-radius: 25px;
+  padding: 25px;
+}
