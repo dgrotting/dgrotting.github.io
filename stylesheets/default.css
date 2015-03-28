@@ -59,6 +59,15 @@ main {
     font-size: 2em;
 }
 
+.thumbnail {
+  float:left;
+  padding: 1em;
+}
+
+.blogpost {
+  float:left;
+}
+
 #belowheadertitle {
   padding: .5em;
   font-family: 'Open Sans', sans-serif;
@@ -68,10 +77,10 @@ main {
 
 #belowheader {
   text-align: left;
-  padding-right: 3em;
+  padding-right: 2em;
   padding-top: 1em;
-  padding-left: 3em;
-  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-bottom: 2em;
   border: solid 2px #8ea6ae;
   border-radius: 1em;
   display: inline-block;
@@ -102,10 +111,6 @@ main {
   font-weight: 400
 }
 
-#belowheader div:hover {
-  background-color: #dbe6e2;
-}
-
 
 footer {
   background-color: #8ea6ae;
@@ -128,6 +133,13 @@ ul {
 }
 
 #nav li a:hover {
+  color: #cad3d7;
+  outline: solid 2px #cad3d7;
+  text-decoration: none;
+  padding: 1em;
+}
+
+.active {
   color: #cad3d7;
   outline: solid 2px #cad3d7;
   text-decoration: none;
