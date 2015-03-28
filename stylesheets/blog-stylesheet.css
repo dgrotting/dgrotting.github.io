@@ -94,9 +94,12 @@ ul {
 #footernav li {
   display: inline;
   color: #effbff;
-  padding: 1em;
+  padding: .5em;
 }
 
+#footernav li a:hover {
+  opacity: .5;
+}
 
 
 
