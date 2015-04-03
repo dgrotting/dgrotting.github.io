@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>David Grotting - Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header>
+  <div id="logo">
+      <a href="../index.html"><img class="logoimg" src="../imgs/dg.png"></a>
+  </div>
+
+
+  <nav id="mainnav">
+    <ul id="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about-me.html">About Me</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li><a class="../active" href="blog.html">Blog</a></li>
+      <li><a href="../contact-me.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+  <section id="post">
+  <h1>Arrays vs. Hashes</h1>
+  <h2>What's the difference?</h2>
+  <h4>April 2nd 2015</h4>
+
+  <hr>
+
+    <p>
+      An Array...A Hash? What the heck are those? Well let me tell you. It's actually pretty simple. In Ruby, Arrays and hashes are places to store information. They are both collecitons of objects stored in different ways. In short, an array stores objects in a specific order by integer index. That means that any of the objects can be called by their order in the 'line.' Pretty easy, huh? A hash on the other hand is a list of stored 'key-value' pairs stored in a non sequential order. That means that the values can be called by their relative keys, and vice versa. Let me give you some examples of each below to further your understanding.
+    </p>
+  <h4>Arrays</h4>
+    <p>
+      I'll give you an example of an array. Say you have been putting together a list of your favorite candy bars. You can use an array to store this list of candy bars, even order them by your favorite! Obviously, Snickers are your favorite so they will go first in the array at index number '0'. (Don't get freaked out, arrays always start at the zeroth position first) You can then have the following 19 (or more if you have a sweet tooth!) favorite candy bars to take up the sequential index position. If you ever forget what your 10th favorite candy bar is, you can simply call it in the array. You would simply use the ruby code: candy_bars[9] and your 10th favorite candy bar will appear! Below is what your array would look like in ruby.
+    </p>
+    <code>
+      candy_bars["Snickers", "Milky Way", "Reeses", "Almond Joy", "100 Grand", "Baby Ruth", "Butterfinger", "Dove", "And many more!"]
+    </code>
+  <h4>Hashes</h4>
+    <p>
+      Now a hash on the other hand is a key-value pairing. So how is this different than an array? Well, an array object can be accessed by its index number. On the other hand, a hash value can only be accessed by it's relevant key. This means that the hash objects are not stored in order, but each hash value always hangs out with it's key. So - you could use hashes to give a rating descriptor to each of your candy bars! The rating could be the key and the value could be the value. Check out my new hash. I bet it will make sense to you! You can easily call the candy bar by the rating system that I have put on it. (You may also notice that we use a different bracket system for hashes)
+    </p>
+    <code>
+      candy_bars{"delicious" => Snickers", "tasty" => "Milky Way", "flavorful" => "Reeses", "gross" => "Almond Joy", "pretty good" => "100 Grand", "underrated" => "Baby Ruth", "over rated" => "Butterfinger", "over priced" => "Dove", "everything else!" => "And many more!"}
+    </code>
+
+    <p>
+      See, that wasn't so bad! Was it?
+    </p>
+
+  </section>
+</main>
+
+<footer>
+
+
+  <nav id="footernav">
+    <ul>
+      <li><a href="#"><img src="../imgs/facebook.png"/></a></li>
+      <li><a href="#"><img src="../imgs/twitter.png"/></a></li>
+      <li><a href="#"><img src="../imgs/linkedin.png"/></a></li>
+      <li><a href="#"><img src="../imgs/google.png"/></a></li>
+    </ul>
+  </nav>
+
+</footer>
+
+</body>
+
+
