@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <title>David Grotting - Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+      <a href="../index.html"><img class="logoimg" src="../imgs/dg.png"></a>
+    </div>
+
+
+    <nav id="mainnav">
+      <ul id="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about-me.html">About Me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a class="../active" href="blog.html">Blog</a></li>
+        <li><a href="../contact-me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="post">
+      <h1>A Look at Enumarable Methods</h1>
+      <h2>.group_by - A Useful Enumerable</h2>
+      <h4>April 9th 2015</h4>
+
+      <hr>
+      <h4>What is an enumerable?</h4>
+      <p>
+        We've become acquainted with methods over the past few weeks. A method can be invoked on an array or hash to perform different operations. We can get more complex and add a number of different methods on top of one another. This can get messy and end up being a lot of code over time. What is a solution to this? Enumerables! Enumerables are essentially packaged methods into one. They perform a number of methods on an array or hash and give us a new output with the enumerable invoked. Making some sense? Let's check out one of my favorite enumerables in action to help clarify.
+      </p>
+      <h4>Let's check out .group_by</h4>
+      <p>
+        I'm sure you've had times in your life where you have a list of names that you've wanted grouped by alphabet letter. Wouldn't it be great if there was something you could simply do to the list so that it spit out a number of lists of the names that start with each letter of the alphabet? Let's take a look at an enumerable that can do just that - '.group_by'. I am going to take our cohort list from DBC and group the names by the first letter of each member's first name. First, lets look at the array that contains our whole cohort:
+        </P>
+        <code>
+          sf_group = ["Alex Cusack","Alex Kass","Andrew Donato","Andrew Dowd","Arielle Chen","Brian Kennedy","Carissa Blossom","Christopher William Kramlich","David Matthew Grotting","Ellis Marte","Emily Boerner","Eric Flores","Eric Saxman","Ian Andrew Harris","James Newman","Jeffrey Chang","Jennifer Jaochico","Josh Ullman","Karan Aditya","Le Tran","Michael Farr","Miche Weinberg","Patrick Betti","Ryan Posthumus","Tanay Arora","Travis R Siebenhaar","Vivek Poola"]
+        </code>
+        <p>
+        As you can see, this is simply an array that contains the individual members of our San Francisco cohort. Now lets invoke the .group_by method that will group the members of the group by the first letter of their first name. Here is what the code will look like. I'll break it down below.
+        </p>
+        <code>
+          sf_group.group_by {|name| name[0]}
+        </code>
+        <p>
+        So what exactly is this doing? The enumerable is saying 'lets take each individual name in the array and group it by the first letter - referenced by name[0]'. It then returns the group as a hash, where each key represents a letter of the alphabet that the names start with and a value which will be an array of the names that start with that letter. Check it out below to see what this enumerable will return!
+        </p>
+        <code>
+          {"A"=>["Alex Cusack", "Alex Kass", "Andrew Donato", "Andrew Dowd", "Arielle Chen"], "B"=>["Brian Kennedy"], "C"=>["Carissa Blossom", "Christopher William Kramlich"], "D"=>["David Matthew Grotting"], "E"=>["Ellis Marte", "Emily Boerner", "Eric Flores", "Eric Saxman"], "I"=>["Ian Andrew Harris"], "J"=>["James Newman", "Jeffrey Chang", "Jennifer Jaochico", "Josh Ullman"], "K"=>["Karan Aditya"], "L"=>["Le Tran"], "M"=>["Michael Farr", "Miche Weinberg"], "P"=>["Patrick Betti"], "R"=>["Ryan Posthumus"], "T"=>["Tanay Arora", "Travis R Siebenhaar"], "V"=>["Vivek Poola"]}
+        </code>
+        <p>
+        Wasn't that cool? We now have a nicely sorted list of groups of names that start with different alphabet letters.
+        </p>
+      <p>
+        <!-- insert P3 here -->
+      </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+    </section>
+  </main>
+
+  <footer>
+
+
+    <nav id="footernav">
+      <ul>
+        <li><a href="#"><img src="../imgs/facebook.png"/></a></li>
+        <li><a href="#"><img src="../imgs/twitter.png"/></a></li>
+        <li><a href="#"><img src="../imgs/linkedin.png"/></a></li>
+        <li><a href="#"><img src="../imgs/google.png"/></a></li>
+      </ul>
+    </nav>
+
+  </footer>
+
+</body>
+
+
