@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+  <title>David Grotting - Blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header>
+  <div id="logo">
+      <a href="../index.html"><img class="logoimg" src="../imgs/dg.png"></a>
+  </div>
+
+
+  <nav id="mainnav">
+    <ul id="nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about-me.html">About Me</a></li>
+      <li><a href="../resume.html">Resume</a></li>
+      <li><a class="../active" href="blog.html">Blog</a></li>
+      <li><a href="../contact-me.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<main>
+  <section id="post">
+  <h1>JavaScript Objects vs. Ruby Hashes</h1>
+  <h2>Not so different after all</h2>
+  <h4>May 2nd 2015</h4>
+
+  <hr>
+
+    <p>
+      Ruby and JavaScript, both object oriented web programming languages, have their own ways of storing key/value pair data sets. In Ruby, key/value data structures are called "hashes," and in JaveScript, they are called "Objects." Let's check out an example of the same data structure written in both languages so we can see the differences in each language. First, check out this ruby hash that stores the information about an athlete.
+    </p>
+    <script src="https://gist.github.com/dgrotting/5611766b56b8ac2e7f6c.js"></script>
+    <p>
+      As you can see, we are simply able to set a number of key/value pairs for the athlete, Kelly Slater. The syntax for creating this hash is simply hash_name = {key: value, key2: value2, etc.}. now lets look at this same data in the context of a JavaScript object.
+    </p>
+    <script src="https://gist.github.com/dgrotting/0ce611522ce4891f03c9.js"></script>
+    <p>
+      So lets break down the main differences. At a quick glance, they don't look all that different! In order to define the object variable in JavaScript, we must include var = at the bedinning of the object definition. You then see at the end of the object, we much close the object with a semicolon. These are the two main differences of Ruby vs. JavaScript in the syntax. Now, the next main differences are how we can call values. The syntax for calling Kelly Slater's name in JavaScript is kellySlater.name, whereas in Ruby it is kelly_slater[:name]. Overall, the two languages approach these types of data sets in a similar manner. Ruby Hashes and JavaScript Objects aren't that different after all!
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
+<footer>
+
+
+  <nav id="footernav">
+    <ul>
+      <li><a href="#"><img src="../imgs/facebook.png"/></a></li>
+      <li><a href="#"><img src="../imgs/twitter.png"/></a></li>
+      <li><a href="#"><img src="../imgs/linkedin.png"/></a></li>
+      <li><a href="#"><img src="../imgs/google.png"/></a></li>
+    </ul>
+  </nav>
+
+</footer>
+
+</body>
+
+
