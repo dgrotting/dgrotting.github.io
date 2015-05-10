@@ -1,0 +1,29 @@
+body {
+  background-color: #BBDEFB;
+  font-family: sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+h1 {
+   padding: 15px;
+}
+section {
+    background-color: #FFF;
+    color: #444;
+    padding: 10px 25px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px;
+}
+
+a:hover {
+  border: 1px solid #666;
+  border-radius: 3px;
+  padding: 5px;
+}
